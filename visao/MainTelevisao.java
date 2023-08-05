@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package visao;
+
+import modelo.ControleRemoto;
 
 /**
  *
  * @author leandro
  */
 public class MainTelevisao {
-    
+    public static void main(String[] args) {
+        // Instância objeto
+        ControleRemoto cR1 = new ControleRemoto();
+        cR1.setCanal(37);
+        cR1.setVolume(48);
+        cR1.setConfiguracoes(2);
+        cR1.toString();
+    }
 }
