@@ -14,9 +14,13 @@ public class ControleRemoto {
     public ControleRemoto(){}
     
     // Métodos
-    public void aumentarVolume(int maisVolume){}
+    public void aumentarVolume(int maisVolume){
+        this.volume = this.volume + maisVolume; 
+    }
     
-    public void diminuirVolume(int menosVolume){}
+    public void diminuirVolume(int menosVolume){
+        this.volume = this.volume - menosVolume;
+    }
     
     public void controleConfiguracoes(int configuracao){
         if(this.configuracoes == 1){
@@ -56,6 +60,11 @@ public class ControleRemoto {
 
     public void setConfiguracoes(int configuracoes) {
         this.configuracoes = configuracoes;
+    }
+
+    @Override
+    public String toString() {
+        return "ControleRemoto{" + "canal=" + canal + ", volume=" + volume + ", configuracoes=" + configuracoes + '}';
     }
     
 }
